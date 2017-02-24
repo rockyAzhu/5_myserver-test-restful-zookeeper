@@ -1,0 +1,22 @@
+ext.spec = [
+    'apache': [
+        'httpcomponents': [
+            'httpclient': 'org.apache.httpcomponents.httpclient:' + httpcomponentsVersion
+        ]
+    ],
+    'linkedin': [
+        'pegasus': [
+            'restClient': 'com.linkedin.pegasus:restli-client:' + pegasusVersion,
+            'r2': 'com.linkedin.pegasus:r2:' + pegasusVersion,
+            'd2': 'com.linkedin.pegasus:d2:' + pegasusVersion
+        ]
+    ],
+    'google': [
+        'guava': [
+            'guava': 'com.google.guava:guava:' + guavaVersion
+        ]
+    ],
+    'testng': [
+        'testng': 'org.testng:testng:' + testngVersion
+    ]
+]

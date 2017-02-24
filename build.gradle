@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply from: 'product_spec.gradle'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.newsoftvalley.myserver:myserver-rest-client:0.0.1"
+    compile "com.newsoftvalley.myserver:myserver-data-template:0.0.1"
+
+    compile spec.linkedin.pegasus.restClient
+    compile spec.linkedin.pegasus.r2
+    compile spec.linkedin.pegasus.d2
+    compile spec.google.guava.guava
+    testCompile spec.testng.testng
+}
+
+test {
+    useTestNG()
+}
